@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "sirv --host=0.0.0.0 --dev ./dist/",
+    "start": "sirv --host=0.0.0.0 --dev ./docs/",
     "dev": "sirv --host=0.0.0.0 --dev ./src/",
     "build": "node ./lib/build.js"
   },

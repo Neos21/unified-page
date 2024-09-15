@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unified Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+    <script type="module">
+      console.log(window.processor.processSync('# Example').value);
+    </script>
+  </head>
+  <body>
+
+<template id="markdown" data-title="Example Page">
+
+# Example Page
+
+## 目次
+
+## Headline 2
+
+### Headline 3
+
+#### Headline 4
+
+##### Headline 5
+
+###### Headline 6
+
+Paragraph. [Link](#). *Em*. **Strong**. `Code`.
+
+[Link. *Em*. **Strong**. `Code`.](#) *Em. [Link](#).* **Strong. [Link](#).**
+
+<blockquote>Blockquote.</blockquote>
+
+```
+Pre
+```
+
+    Pre : Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre Pre.
+
+```bash
+# Code Pre
+$ export PATH="/example:${PATH}"
+```
+
+```bash
+# Code Pre : Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre Code Pre.
+$ export PATH="/example:${PATH}"
+```
+
+- List
+    - Nested
+    - Nested
+- List
+
+| Table | Table Headling |
+|-------|----------------|
+| Table | Table Data 1   |
+| Table | Table Data 2   |
+| Table | Table Data 3   |
+
+1. Ordered List
+    1. Nested Ordered List
+    2. Nested Ordered List
+2. Ordered List
+
+---
+
+End.
+
+</template>
+
+  </body>
+</html>
