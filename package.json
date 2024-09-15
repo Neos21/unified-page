@@ -1,0 +1,31 @@
+{
+  "name": "unified-page",
+  "description": "Unified Page",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "sirv --host=0.0.0.0 --dev ./dist/",
+    "dev": "sirv --host=0.0.0.0 --dev ./src/",
+    "build": "node ./lib/build.js"
+  },
+  "author": "Neo <neos21@gmail.com> (https://neos21.net/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/unified-page#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/unified-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/unified-page/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
+  "devDependencies": {
+    "clean-css": "5.3.3",
+    "html-minifier": "4.0.0",
+    "sirv-cli": "2.0.2",
+    "uglify-js": "3.19.3"
+  }
+}
