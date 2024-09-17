@@ -227,7 +227,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid var(--unified-colour-table-border);
   padding: calc(var(--unified-space-tiny) / var(--unified-ratio-2)) var(--unified-space-tiny);
 }
@@ -358,7 +359,8 @@ img {
   padding: .6rem 0;
 }
 
-pre:has(> code[class*="language-"]), pre[class*="language-"] {
+pre:has(> code[class*="language-"]),
+pre[class*="language-"] {
   border: 0;
   background: #171c1d;
 }
